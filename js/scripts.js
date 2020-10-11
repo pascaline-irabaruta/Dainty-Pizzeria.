@@ -151,3 +151,11 @@ function Pizza(size, crust) {
               var userName = $("#uname").val();
               alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes. Thank you for choosing Dainty Pizzeria! Please come back again")
             });
+            $("#messageform").submit(function(){
+                var uname= $("input#names").val();
+                alert(uname+" we have received your message. Thank you for reaching out to us.");
+              });
+
+
+
+            });
