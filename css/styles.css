@@ -6,3 +6,17 @@ body {
     margin: 0%;
     padding: 0%;
 }
+#contactsbody {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-gourmet-pizza-big-sale-texture-hand-painted-black-banner-image_170751.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#second {
+    text-align: center;
+    color:white;
+    margin-top:10%;
+    padding-top: 5%;
+    padding-bottom: 5%%;
+    margin-bottom: 15%;
+
+}
