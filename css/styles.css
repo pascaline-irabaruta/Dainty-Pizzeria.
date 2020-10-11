@@ -31,3 +31,43 @@ headings h2 {
     color: yellow;
     font-size:65px ;
 }
+#chckout {
+  display: none;
+}
+.navbar-header {
+  color: white;
+  font-weight: bolder;
+  font-family: cursive;
+}
+.navbar-header span {
+  color: yellow;
+}
+.container-fluid img {
+  height: 50px;
+  width: 50px;
+}
+.nav {
+  width:450px;
+  height:30px;
+  float: right;
+
+}
+.nav ul li{
+  width:100px;
+  color: white;
+	float:left;
+	margin: 10px auto;
+  list-style-type:none;
+  border: 1px solid black;
+  }
+  .nav ul li a{
+    text-decoration: none;
+    color:darkgray;
+ }
+ .nav #activeId {
+   background-color: yellow;
+   color: black;
+ }
+ #navul li:hover {
+   background-color: yellow;
+   color: black;
