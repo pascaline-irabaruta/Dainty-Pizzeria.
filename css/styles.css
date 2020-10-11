@@ -170,5 +170,24 @@ color: darkgray;
   color: darkgray;
   padding-bottom: 40px;
   margin-bottom: 70px;
-
+}
+.checkouts {
+  display: none;
+  text-align: center;
+}
+.checkouts h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: darkblue;
+}
+.addresses {
+  display: none;
+  text-align: center;
+}
+.addresses h4 {
+  text-decoration: underline;
+}
+footer {
+  color: white;
+  text-align:center;
 }
