@@ -100,3 +100,38 @@ function Pizza(size, crust) {
   function checkPepperoni(topping) {
     return topping === "pepperoni";
   }
+  $(document).ready(function(){
+  function getPizzaSize() {
+      return $("#sz").find(":selected").val();
+    }
+    function getCrust() {
+    return $("#crst").find(":selected").val();
+  }
+  function getToppings() {
+      var toppingList = [];
+      $(".form-check-input:checked:enabled").each(function() {
+        toppingList.push($(this).val());
+      });
+      return toppingList;
+    }
+
+    $("form#orderform").submit(function(event) {
+      event.preventDefault();
+      var pizzaSize = getPizzaSize();
+      var crust = getCrust();
+      var toppingList = getToppings();
+
+      var newPizza = new Pizza(pizzaSize, crust);
+      newPizza.toppings.push(toppingList);
+      $("#chckout").show();
+      var oneOrder =
+        sizeCalcPrice(pizzaSize) +
+        crustCalcPrice(crust) +
+        toppingsCalcPrice(toppingList);
+
+        $("#items").append(
+
+            "<li> Pizza size: "  +newPizza.size + "<br> crust :"+newPizza.crust+"<br> toppings: " +newPizza.toppings+ "<br> Total price: "+oneOrder+ " rwf </li>"
+
+          );
+        });
