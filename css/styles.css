@@ -71,3 +71,104 @@ headings h2 {
  #navul li:hover {
    background-color: yellow;
    color: black;
+}
+#third {
+  /* display: none; */
+  background-color: darkorange;
+  padding-top: 10%;
+  margin-top: 20px;
+  padding-bottom: 10%;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+
+}
+.about span{
+ color: yellow;
+}
+#orderbody{
+ background-image: url("https://image.freepik.com/free-photo/view-frame-with-pizza-black-background_23-2148308883.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+#forth {
+
+ padding-top: 40px;
+ margin-top: 40px;
+ padding-bottom: 50px;
+ margin-bottom: 50px;
+
+}
+
+#forth h3{
+ text-align: center;
+ text-decoration: underline;
+}
+.online-order {
+margin: 2px;
+background-image: url("https://us.123rf.com/450wm/jchizhe/jchizhe1703/jchizhe170300555/73234974-food-ingredients-and-spices-for-cooking-mushrooms-tomatoes-cheese-onion-oil-pepper-salt-basil-olive-.jpg?ver=6");
+background-size: cover;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 30px;
+color: darkgray;
+
+}
+.yourOrders {
+ margin: 2px;
+ background-image: url("https://us.123rf.com/450wm/jchizhe/jchizhe1703/jchizhe170300555/73234974-food-ingredients-and-spices-for-cooking-mushrooms-tomatoes-cheese-onion-oil-pepper-salt-basil-olive-.jpg?ver=6");
+ background-size: cover;
+ padding-top: 50px;
+ padding-bottom: 20px;
+ padding-left: 30px;
+ color: white;
+}
+
+#fifth {
+ /* display: none; */
+ padding-top: 60px;
+ margin-top: 60px;
+ padding-left: : 10%;
+ margin-right: : 10%;
+ border: 1px solid wheat;
+}
+
+#message-form {
+ /* background-color: wheat; */
+
+ /* margin: 3px;
+ padding: 3px; */
+}
+#message-form h4 {
+ text-align: center;
+ font-weight: bolder;
+ color: white;
+}
+#other-contacts {
+   color: white;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 163px;
+}
+#op-hours {
+ text-align: center;
+ padding-top: 30px;
+ padding-bottom: 169px;
+ color: white;
+}
+.social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+}
+#checkoutAnddeliver {
+  background-color: black;
+  color: darkgray;
+  padding-bottom: 40px;
+  margin-bottom: 70px;
+
+}
