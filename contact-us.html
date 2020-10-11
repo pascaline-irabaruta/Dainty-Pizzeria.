@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="scripts.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Dainty's</title>
 </head>
 <body id="contactsbody">
@@ -27,4 +27,23 @@
       </nav>
     </div>
   </div>
+  <div class="container" id="fifth">
+    <div class="contacts">
+      <div class="col-sm-4" id="message-form">
+        <h4>Send a mail</h4>
+        <form action="" id="messageform">
+          <strong>Names: </strong>
+          <input type="text" name="name" value="" id="names" required><br><br>
+          <strong>Email: </strong>
+          <input type="email" name="mail" value="" required> <br><br>
+          <textarea name="message" id="messages" cols="30" rows="10"
+            placeholder="Your message here..."></textarea><br>
+          <input id="buton" type="submit" value="Send mail">
+        </form>
+      </div>
+      <div class="col-sm-4" id="other-contacts">
+        <h3>Other contact Information</h3> <br><br>
+        <p>Phone-number: +250789160608</p>
+        <p>Instagram: Dainty's_Pizzeria</p>
+      </div>
 </body>
