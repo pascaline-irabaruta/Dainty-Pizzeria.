@@ -13,12 +13,12 @@ This document will get you a copy of the project up and running on your local ma
 
  ### Project setup instructions
  1. open your github account.
- 2. follow this link https://github.com/pascaline-irabaruta/Dainty-Pizzeria to go to the project.
+ 2. follow this link https://github.com/pascaline-irabaruta/Dainty-Pizzeria. to go to the project.
  3. click on the the green button and copy the link given.
  4. go to terminal and create folder
  5. enter this command: git init , to initialize the git repository.
  6. enter the command : git clone and paste the link you copied.
-    example: git clone https://github.com/pascaline-irabaruta/Dainty-Pizzeria
+    example: git clone https://github.com/pascaline-irabaruta/Dainty-Pizzeria.
 ### technology used
 1. HTML language
 2. jquery & Javascript
@@ -26,7 +26,7 @@ This document will get you a copy of the project up and running on your local ma
 4. Css
 
 ### Project url
-https://pascaline-irabaruta.github.io/Dainty-Pizzeria
+https://pascaline-irabaruta.github.io/Dainty-Pizzeria.
 
 ### Contact Information
 * Email: pascyirabaruta456@gmail.com
