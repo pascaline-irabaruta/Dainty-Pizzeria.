@@ -12,11 +12,22 @@ body {
   background-repeat: no-repeat;
 }
 #second {
-    text-align: center;
-    color:white;
-    margin-top:10%;
-    padding-top: 5%;
-    padding-bottom: 5%%;
-    margin-bottom: 15%;
-
+  text-align: center;
+  color:white;
+  margin-top:10%;
+  padding-top: 5%;
+  padding-bottom: 5%%;
+  margin-bottom: 15%;
+}
+headings h2 {
+    font-weight: bolder;
+    font-size: 30px;;
+    font-family: cursive;
+}
+.headings p {
+    font-size: 20px;;
+}
+.headings span {
+    color: yellow;
+    font-size:65px ;
 }
