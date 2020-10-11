@@ -4,45 +4,46 @@ function Pizza(size, crust) {
     this.toppings = [];
   }
   var sizePrice = {
-      small: 5000,
-      medium: 7000,
-      large: 9000
-    };
-    var toppingPrice =[
-      {
-        Ham: {
+    small: 5000,
+    medium: 7000,
+    large: 9000
+  };
+  var toppingPrice =[
+    {
+      Ham: {
+        small: 500,
+        medium: 700,
+        large: 1000
+      },
+      Pepperoni: {
+        small: 700,
+        medium: 1000,
+        large: 1500
+      },
+      Mozzarella: {
+        small: 500,
+        medium: 800,
+        large: 1100
+      },
+        Sausage: {
+          small: 1000,
+        medium: 1500,
+        large: 1700
+        },
+        Bacon: {
           small: 500,
-          medium: 700,
-          large: 1000
+        medium: 1000,
+        large: 1500
         },
-        Pepperoni: {
-          small: 700,
-          medium: 1000,
-          large: 1500
-        },
-        Mozzarella: {
-          small: 500,
-          medium: 800,
-          large: 1100
-        },
-          Sausage: {
-            small: 1000,
-          medium: 1500,
-          large: 1700
-          },
-          Bacon: {
-            small: 500,
-          medium: 1000,
-          large: 1500
-          },
-            Mushroom: {
-              small: 800,
-          medium: 1000,
-          large: 1200
-            }
-      }
-      ];
-      var crustPrice = {
+          Mushroom: {
+            small: 800,
+        medium: 1000,
+        large: 1200
+          }
+    }
+    ];
+
+  var crustPrice = {
     crispy: 1500,
     stuffed: 1000,
     gluten: 1200,
@@ -100,7 +101,8 @@ function Pizza(size, crust) {
   function checkPepperoni(topping) {
     return topping === "pepperoni";
   }
-  $(document).ready(function(){
+
+$(document).ready(function(){
   function getPizzaSize() {
       return $("#sz").find(":selected").val();
     }
@@ -114,7 +116,7 @@ function Pizza(size, crust) {
       });
       return toppingList;
     }
-
+var grandTotal =0;
     $("form#orderform").submit(function(event) {
       event.preventDefault();
       var pizzaSize = getPizzaSize();
@@ -128,34 +130,31 @@ function Pizza(size, crust) {
         sizeCalcPrice(pizzaSize) +
         crustCalcPrice(crust) +
         toppingsCalcPrice(toppingList);
-
+        grandTotal = grandTotal + oneOrder;
         $("#items").append(
 
-            "<li> Pizza size: "  +newPizza.size + "<br> crust :"+newPizza.crust+"<br> toppings: " +newPizza.toppings+ "<br> Total price: "+oneOrder+ " rwf </li>"
-
+            "<li> Pizza size: "  +newPizza.size + "<br> crust :"+newPizza.crust+"<br> toppings: " +newPizza.toppings+ "<br> Total price: "+oneOrder+ " rwf</li>"
           );
         });
-        $("#chckout").click(function() {
-          $(".checkouts").show();
-          var userName = $("#uname").val();
-          var userPhone = $("#phn").val();
-          $("#clientname").text(userName);
-          $("#clientphone").text(userPhone);
-
-          $("#checkoutslist").html($("#items").html());
-        });
-        $("#delivers").click(function() {
-          $(".addresses").show();
-        });
-        $("#addre").click(function() {
-          var userName = $("#uname").val();
-          alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes. Thank you for choosing Dainty Pizzeria! Please come back again")
-        });
-
-
-      $("#messageform").submit(function(){
-        var uname= $("input#names").val();
-        alert(uname+" we have received your message. Thank you for reaching out to us.");
-      });
-    
+    $("#chckout").click(function() {
+      $(".checkouts").show();
+      var userName = $("#uname").val();
+      var userPhone = $("#phn").val();
+      $("#clientname").text(userName);
+      $("#clientphone").text(userPhone);
+      $("#checkoutslist").html($("#items").html());
+      $("#grandTot").text(grandTotal+" rwf");
+      $("#grandTot").show();
     });
+    $("#delivers").click(function() {
+      $(".addresses").show();
+    });
+    $("#addre").click(function() {
+      var userName = $("#uname").val();
+      alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes. Thank you for choosing Dainty Pizzeria! Please come back again")
+    });
+  $("#messageform").submit(function(){
+    var uname= $("input#names").val();
+    alert(uname+" we have received your message. Thank you for reaching out to us.");
+  });
+});

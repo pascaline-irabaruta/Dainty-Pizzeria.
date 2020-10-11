@@ -184,6 +184,11 @@ color: darkgray;
 .addresses h4 {
   text-decoration: underline;
 }
+#grandTot {
+  display: none;
+  color: green;
+  font-weight: bolder;
+}
 footer {
   color: white;
   text-align:center;
