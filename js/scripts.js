@@ -136,26 +136,26 @@ function Pizza(size, crust) {
           );
         });
         $("#chckout").click(function() {
-              $(".checkouts").show();
-              var userName = $("#uname").val();
-              var userPhone = $("#phn").val();
-              $("#clientname").text(userName);
-              $("#clientphone").text(userPhone);
+          $(".checkouts").show();
+          var userName = $("#uname").val();
+          var userPhone = $("#phn").val();
+          $("#clientname").text(userName);
+          $("#clientphone").text(userPhone);
 
-              $("#checkoutslist").html($("#items").html());
-            });
-            $("#delivers").click(function() {
-              $(".addresses").show();
-            });
-            $("#addre").click(function() {
-              var userName = $("#uname").val();
-              alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes. Thank you for choosing Dainty Pizzeria! Please come back again")
-            });
-            $("#messageform").submit(function(){
-                var uname= $("input#names").val();
-                alert(uname+" we have received your message. Thank you for reaching out to us.");
-              });
+          $("#checkoutslist").html($("#items").html());
+        });
+        $("#delivers").click(function() {
+          $(".addresses").show();
+        });
+        $("#addre").click(function() {
+          var userName = $("#uname").val();
+          alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes. Thank you for choosing Dainty Pizzeria! Please come back again")
+        });
 
 
-
-            });
+      $("#messageform").submit(function(){
+        var uname= $("input#names").val();
+        alert(uname+" we have received your message. Thank you for reaching out to us.");
+      });
+    
+    });
